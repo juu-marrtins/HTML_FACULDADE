@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Grade de horários</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(209, 223, 231);
+        }
+        table{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 20%;
+            font-family: monospace;
+        }
+        th, td{
+            border: 2px solid black;
+        }
+        #cabecalho{
+            background-color: rgb(92, 127, 180);
+        }
+        #linha1, #linha3, #linha5{
+            background-color: rgb(173, 188, 237);
+        }
+    </style>
+    <body>
+    <table>
+        <tr id = "cabecalho">
+            <th>HORA</th>
+            <th>SEGUNDA-FEIRA</th>
+            <th>TERÇA-FEIRA</th>
+            <th>QUARTA-FEIRA</th>
+            <th>QUINTA-FEIRA</th>
+            <th>SEXTA-FEIRA</th>
+        </tr>
+        <tr id = "linha1">
+            <td>8h-9h</td>
+            <td colspan="2">Banco de Dados</td>
+            <td>Arquitetura de Computadores</td>
+            <td>Lógica e Algoritmos</td>
+            <td>Desenvolvimento Web</td>
+        </tr>
+        <tr>
+            <td>9h-10h</td>
+            <td>Lógica e Algoritmos</td>
+            <td colspan="2">Desenvolvimento Web</td>
+            <td>Redes</td>
+            <td>Cultura e Sociedade</td>
+        </tr>
+        <tr id = "linha3">
+            <td>10h-10h30</td>
+            <td colspan="5">Intervalo</td>
+        </tr>
+        <tr>
+            <td>10h30-11h30</td>
+            <td>Redes</td>
+            <td>Redes</td>
+            <td>Banco de Dados</td>
+            <td>Cultura e Sociedade</td>
+            <td>Banco de Dados</td>
+        </tr>
+        <tr id = "linha5">
+            <td>11h30-12h30</td>
+            <td>Desenvolvimento Web</td>
+            <td>Lógica e Algoritmos</td>
+            <td colspan = "5">Robótica</td>
+        </tr>
+    </table>
+    </body>
+</html>
