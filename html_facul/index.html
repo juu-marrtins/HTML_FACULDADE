@@ -2,45 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>Correção Tabelas</title>
+        <title>Formulário</title>
     </head>
-    <style>
-        table{
-            text-align: center;
-            border-collapse: collapse;
-        }
-    </style>
     <body>
-        <h1>Horáio Semanal de Aulas</h1>
-        <table border = "1px">
-            <tr>
-                <th>HORÁRIO</th>
-                <th>SEGUNDA-FEIRA</th>
-                <th>TERÇA-FEIRA</th>
-                <th>QUARTA-FEIRA</th>
-                <th>QUINTA-FEIRA</th>
-                <th>SEXTA-FEIRA</th>
-            </tr>
-            <tr>
-                <td>8h-9h</td>
-                <td colspan="2">Matemática</td>
-                <td>Biologia</td>
-                <td colspan = "5">Quimica</td>
-            </tr>
-            <tr>
-                <td>9h-10h</td>
-                <td>Português</td>
-                <td>Geografia</td>
-                <td colspan="2">Física</td>
-                <td>Ed Física</td>
-            </tr>
-            <tr>
-                <td>10h-11h</td>
-                <td>Artes</td>
-                <td>Filosofia</td>
-                <td>Matemática</td>
-                <td colspan="2">Inglês</td>
-            </tr>
-        </table>
+        <h1>EXEMPLO DE FORMULÁRIO</h1>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required/>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required/>
+            <br><br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required/>
+            <br><br>
+            <label for="dataEntrega">Data de Entrega:</label>
+            <input type="date" id="dataEntrega" name="dataEntrega"/>
+            <br><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <br><br>
+            <input type="submit" value="Enviar"/>
+        </form> 
     </body>
 </html>
