@@ -1,29 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Aula 06 - Introdução ao CSS</title>
-        <!--SELEÇÃO DE ELEMENTO-->
-        <style>
-            h2 {
-                color: red
-            }
-            span {
-                font-size: 60px;
-            }
-        </style>
+        <meta charset="UTF-8"/>
+        <title>Página Teste</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!-- EXEMPLO DE CSS INLINE (STYLE NA PROPRIA TAG) -->
-        <h1 style="color: blue">Titulo em azul</h1>
-        <p style="font-size: 48px">Este é um paragrafo</p>
-        <!-- EXEMPLO DE CSS EMBED -->
-        <h2>Titulo Embed</h2>
-        <span>Span embed</span>
-        <!-- EXEMPLO DE CSS EXTERNO-->
-        <h3 class="title">Titulo com css externo</h3>
-        <p id="text-content">Texto com id</p>
-        <h4>Texto com nivel 4</h4>
+        <header class="header">
+            <h1>Bem Vindo Á Uniguairacá</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+                <!-- o a é o link -->
+        </nav>
+        <main class="main-content">
+            <section class="intro">
+                <h2>Introdução</h2>
+                <p>Esta é um página de teste para demonstrar o uso de propriedades CSS comuns.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, earum at possimus fugit aperiam alias sed odit similique voluptatum sequi voluptate minus cum sint vero ducimus ullam consequatur libero doloribus!</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Pagina de Teste.
+                Todos os direitos reservados.
+            </p>
+        </footer>
     </body>
 </html>
