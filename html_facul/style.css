@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: calc();
+    padding: auto;
+}
+body{
+    background-color: rgb(57, 37, 70);
+}
