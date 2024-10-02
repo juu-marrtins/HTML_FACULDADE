@@ -1,33 +1,39 @@
-// Declarações de variaveis
-var time = "Palmeiras";
-let idade = 25;
-idade = "25 anos";
-const cidade = "São Paulo";
+// Operadores Aritimeticos
+let x = 10;
+let y = 5;
 
-//Primitivos 
-let saudacao = "Olá Mundo";
-let preco = 19.99
-let estaChovendo = false;
+let soma = x +y;
+let sobtracao = x - y;
+let multiplicacao = x * y;
+let divisao = x / y;
+let resto = x &y;
 
-// Complexo
-let teclado = {
-    marca: "Hp",
-    peso: "1kg",
-    cor: "Branco",
-    tipo: "Mecanico"
+
+//Operadores de atribuição 
+
+let a = 10;
+let somaX = a +5;
+a += 5;
+
+//Operadores de comparação
+let time = "Flamengo";
+let maiorTime = time == "Flamengo";
+console.log(maiorTime);
+
+//Estruturas condicionais
+const idade = 18;
+
+if (idade >=18) {
+    console.log("Você é de maior");
+} else {
+    console.log("Você é de menor");
 }
 
+//Estruturas de repetição
 
-teclado.marca="Dell"; //Para modificar valores do objeto
-console.log(teclado)
+for (let i = 0; i < 5; i++){
+    let total = 5 * i;
+    console.log("5 x " + i + " = " + total);
+}
 
-let cores = ["Vermelho", "Azul", "Laranja"];
-
-// Concatenção entre strings
-
-let nome = "Matheus";
-let message = "Olá " + nome + ", seja bem-vindo.";
-console.log(message);
-
-let str = "123";
-let strConvertido = Number(str);
+let contador = 10;
