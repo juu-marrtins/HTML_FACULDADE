@@ -1,48 +1,22 @@
-console.log("Exercicio 01 - Maioridade.");
+let num01 = Number (prompt("Digite o 1° número: "));
+let num02 = Number (prompt ("Digite o 2° número: "));
+let operador = prompt ("Descreva a operação desejada: ");
+let result;
 
-let idadeUsuario = 14;
-const idadeBase = 18;
-
-if (idadeUsuario < 18){
-    console.log("Você é menor de idade.")
-} else {
-    console.log("Você é maior de idade.")
-}
-
-console.log("Exercicio 02 - Impar Par.");
-
-function verificarParOuImpar() {
-    let num = 56;
-    if (num%2==0) {
-        return console.log("O número " + num + " é par.")
-    } else{
-        return console.log("O número " + num + " é impar.")
+function calculadora(num01, num02, operador){
+    if (operador == "Soma"){
+        return result = (num01+num02)
+    } else if (operador == "Subtração"){
+        return result = (num01-num02)
+    } else if (operador == "Multiplicação"){
+        return result = (num01*num02)
+    } else if (operador == "Divisão"){
+        return result = (num01/num02)
+    } else {
+        return result = "Operador Inválido"
     }
 }
 
-verificarParOuImpar();
+calculadora(num01, num02, operador);
 
-console.log("Exercicio 03 - N° Positivo, Negativo, Zero.")
-
-let numExTres = -8;
-
-if (numExTres == 0){
-    console.log("Zero.")
-} else if (numExTres > 0) {
-    console.log("Número Positivo.")
-} else{
-    console.log("Número Negativo.")
-}
-
-console.log("Exercício 04 - Tabuada.")
-
-function tabuada() {
-    numTabuada = 70;
-    for (let i = 1; i < 11; i++) {
-        let resultado = numTabuada * i;
-        console.log(numTabuada + " x " + i + " = " + resultado);
-    }
-
-}
-
-tabuada();
+console.log("Operador selecionado: " + operador + ". \nNúmeros escolhidos: " + num01 + " e " + num02 + ". \nResultado: " + result + ".");
